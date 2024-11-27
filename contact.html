@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div id="contact">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Feel free to reach out using the form below or via our social media channels.</p>
+        
+        <div class="contact-container">
+        
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Our Contact Details</h3>
+                <p>Email: <a href="mailto:contact@bluelockfansite.com">contact@bluelockfansite.com</a></p>
+                <p>Phone: +62 812 3456 7890</p>
+                <p>Follow us on social media:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/bluelockofficial/" target="_blank">
+                        <img src="image/f.jpg" alt="Instagram" width="40">
+                    </a>
+                    <a href="https://twitter.com/BlueLockOfficial" target="_blank">
+                        <img src="image/x.jpeg" alt="Twitter" width="40">
+                    </a>
+                    <a href="https://www.youtube.com/channel/BlueLockOfficial" target="_blank">
+                        <img src="image/y.png" alt="YouTube" width="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
